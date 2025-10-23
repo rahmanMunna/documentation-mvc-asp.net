@@ -6,7 +6,7 @@
   - Define database rules (Entity Framework)
   - Describe model metadata.
     
-##`🧰 Namespace : ` `using System.ComponentModel.DataAnnotations`
+## `🧰 Namespace : ` `using System.ComponentModel.DataAnnotations`
 
 ## 🧠 Example : 
 - `Description : ` Suppose we have a `User` class and has some field.
@@ -38,7 +38,7 @@ Class User{
   string Password {get;set;}
 }
 ```
-- We can also use Regular expresion. But this
+- We can also use Regular expresion. But this is only works for `string` type.
 ## 🔍 How It Works:
 - When a user submits a form:
   - ASP.NET automatically checks these annotations.
@@ -65,3 +65,5 @@ Class User{
 | `[Display(Name="Full Name")]`              | Changes the label text shown in the view                 |
 | `[DataType(DataType.Date)]`                | Helps render proper input type (like date picker)        |
 | `[RegularExpression("pattern")]`           | Validates data using regex                               |
+
+- For Details : https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations?view=net-9.0
